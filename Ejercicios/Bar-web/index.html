@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chabooze</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <ul class="navegacion">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <h1>Donde la noche empieza</h1>
+        <h2>
+          Un bar moderno en el corazón de la ciudad. Abierto las 24h donde la
+          fiesta nunca acaba
+        </h2>
+        <a class="btn-verter" href="#contacto">
+          <span class="texto-btn">Te esperamos</span>
+          <span class="botella" aria-hidden="true">
+            <span class="cuello"></span>
+            <span class="cuerpo">
+              <span class="etiqueta"></span>
+            </span>
+          </span>
+        </a>
+      </section>
+      <section id="historia">
+        <h2>Nuestra historia</h2>
+        <p>
+          Chabooze nació en 2019 en un local pequeño del centro. La idea era
+          simple: un bar donde la coctelería de autor se sintiera cercana, sin
+          pretensiones.
+        </p>
+        <p>
+          Hoy seguimos con la misma filosofía: buena música, buenas bebidas y
+          gente que vuelve.
+        </p>
+      </section>
+      <section id="carta">
+        <h2>Nuestra carta</h2>
+        <ul class="lista-cocteles">
+          <li>
+            <h3>Old Fashioned Clásico</h3>
+            <p>Whisky, azúcar, bitters.</p>
+            <span class="precio">$8</span>
+          </li>
+          <li>
+            <h3>Nébula</h3>
+            <p>Gin, arándanos, limón, soda.</p>
+            <span class="precio">$9</span>
+          </li>
+          <li>
+            <h3>Boulevardier</h3>
+            <p>Bourbon, Campari, vermut rojo.</p>
+            <span class="precio">$10</span>
+          </li>
+          <li>
+            <h3>Mango Mule</h3>
+            <p>Vodka, mango, jengibre, limón.</p>
+            <span class="precio">$8</span>
+          </li>
+          <li>
+            <h3>Espresso Martini</h3>
+            <p>Vodka, café, licor de café.</p>
+            <span class="precio">$9</span>
+          </li>
+          <li>
+            <h3>Virgin Sunset (sin alcohol)</h3>
+            <p>Naranja, granadina, soda.</p>
+            <span class="precio">$6</span>
+          </li>
+        </ul>
+      </section>
+
+      <!--Events-->
+      <section id="eventos">
+        <h2>Eventos de la semana</h2>
+        <article class="evento">
+          <h3>Jueves — Vinilos & Vinyl</h3>
+          <p>DJ set de vinilos, 2x1 en clásicos hasta las 23h.</p>
+        </article>
+        <article class="evento">
+          <h3>Viernes — Coctelería de autor</h3>
+          <p>Música en vivo + carta especial de autor.</p>
+        </article>
+        <article class="evento">
+          <h3>Sábado — Noche temática</h3>
+          <p>Cada semana una temática distinta. Síguenos en Instagram.</p>
+        </article>
+        <article class="evento">
+          <h3>Domingo — Vermut sesión</h3>
+          <p>Ambiente tranquilo, vermut y tapas.</p>
+        </article>
+      </section>
+      <!--Contactos-->
+      <section id="contacto">
+        <h2>Reserva tu mesa</h2>
+        <p>Te confirmamos por email en menos de 24h.</p>
+        <form>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="personas">Personas</label>
+          <select id="personas" name="personas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5+</option>
+          </select>
+
+          <button type="submit">Confirmar reserva</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h3>Chabooze</h3>
+      <p>Calle Nassau 23M,Granata</p>
+      <p>+34 600 000 000 · hola@chabooze.com</p>
+      <p>© 2026 Chabooze. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
