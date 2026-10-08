@@ -1,0 +1,40 @@
+/* Feel free to remove these styles or customise in your own stylesheet 👍  */
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --color-fondo: #d6e1f0;
+}
+body {
+  background-color: var(--color-fondo);
+}
+
+.card-container {
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border: 2px;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 2rem;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.7);
+}
