@@ -1,0 +1,82 @@
+html.tema-claro {
+  /* Tema claro */
+
+  ---fondo: #ecf3fd;
+  --color-nav: #fcfdff;
+  --fondo-mas-abajo: #effbf9;
+  --color-boton-clickeado: #eb5a55;
+}
+html.tema-oscuro {
+  /* Tema oscuro */
+  --fondo: #050a1e;
+  --fondo-mas-abajo: #091239;
+  --color-nav: #1f2535;
+  --color-boton-clickeado: #eb5a55;
+  --fondo-boton: #2f354b;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  /* background-color: var(--fondo); */
+  background: radial-gradient(circle, var(--fondo), var(--fondo-mas-abajo));
+}
+.main {
+  padding: 10px;
+  border: 2px solid black;
+  justify-content: space-between;
+  background-color: var(--color-nav);
+  display: flex;
+  grid-area: 500px;
+  justify-items: end;
+  margin: auto;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+img {
+  object-fit: contain;
+}
+/*Cambiar de oscuro a claro*/
+
+.boton-tema {
+  background: transparent;
+  border: 1px solid var(-fondo-boton);
+  border-color: transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+
+.boton-tema:hover {
+  border-color: var(--color-boton-clickeado);
+}
+
+.icono-oscuro {
+  display: none;
+  background-color: #2f354b;
+}
+
+.icono-claro {
+  display: block;
+}
+
+html.tema-oscuro .icono-claro {
+  display: block;
+}
+html.tema-claro .icono-oscuro {
+  display: none;
+}
